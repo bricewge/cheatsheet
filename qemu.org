@@ -1,0 +1,13 @@
+* switch tty
+:PROPERTIES:
+:source:   https://askubuntu.com/questions/54814/how-can-i-ctrl-alt-f-to-get-to-a-tty-in-a-qemu-session
+:END:
+1. ~Ctrl~ ~Alt~ ~2~ to siwtch to Qemu monitor
+2. Execute ~sendkey ctrl-alt-f1~
+3. ~Ctrl~ ~Alt~ ~1~ Switch back to the host's tty
+
+* without GUI
+:PROPERTIES:
+:source:   https://serverfault.com/questions/471719/how-to-start-qemu-directly-in-the-console-not-in-curses-or-sdl
+:END:
+=qemu -nographic -serial mon:stdio -append 'console=ttyS0' foo.img=

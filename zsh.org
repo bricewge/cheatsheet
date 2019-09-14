@@ -1,0 +1,9 @@
+* shortcuts
+:PROPERTIES:
+:source:   https://www.howtogeek.com/howto/ubuntu/keyboard-shortcuts-for-bash-command-shell-for-ubuntu-debian-suse-redhat-linux-etc/
+:END:
+** cursor movment
+- ~M-b~ :: Back one word
+- ~C-b~ :: Back one character
+- ~M-f~ :: Forward one word
+- ~C-f~ :: Forward one character

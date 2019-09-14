@@ -1,0 +1,7 @@
+#+TITLE: tmux
+
+* rename window
+:PROPERTIES:
+:source:   https://stackoverflow.com/a/40333995
+:END:
+~PREFIX + ,~ or =tmux rename window "$window_name"=

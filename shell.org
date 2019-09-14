@@ -1,0 +1,14 @@
+#+TITLE: shell
+
+* history shortcuts
+:PROPERTIES:
+:source:   https://news.ycombinator.com/item?id=2983079
+:END:
+The bang or history shortcuts can be expanded with space, magic space is
+enabled.
+
+-  =!!= :: previous command
+- =!-2$= :: last arguemt from 2 commands ago
+- =!$= :: last argument of previous command, same as =!!:$=
+- =!fi:2= :: second argument of the most recent command starting with the
+  letters =fi=
