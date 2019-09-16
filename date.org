@@ -1,9 +1,11 @@
 #+TITLE: date
 
 * iso
-#+begin_src sh
+#+begin_src sh :results raw
+date -I
 date --iso-8601=seconds
 #+end_src
 
 #+RESULTS:
-: 2019-09-15T20:25:00+02:00
+2019-09-16
+2019-09-16T15:51:00+02:00
