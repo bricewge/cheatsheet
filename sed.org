@@ -1,0 +1,11 @@
+#+TITLE: sed
+
+* print range of line from file
+#+begin_src sh
+  sed 5,7p < "$text"
+#+end_src
+
+* delete a line from a file
+#+begin_src sh
+  sed -i 42d ~/.ssh/known_hosts
+#+end_src
