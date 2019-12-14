@@ -1,0 +1,6 @@
+#+TITLE: zbarimg
+
+* decode a QR code from your screen
+#+begin_src sh
+  maim -sk | zbarimg -q --raw -
+#+end_src
