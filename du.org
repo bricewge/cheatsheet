@@ -1,0 +1,6 @@
+#+TITLE: du
+
+* sort directory content by size
+#+begin_src sh
+  du -had1 | sort -h
+#+end_src
