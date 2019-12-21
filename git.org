@@ -1,0 +1,14 @@
+#+TITLE: git
+
+* checkout commit from a week ago
+:PROPERTIES:
+:source:   https://www.endpoint.com/blog/2014/05/19/git-checkout-at-specific-date
+:END:
+#+begin_src sh
+git checkout $(git rev-list -1 --before="1 week ago" master)
+#+end_src
+
+* modify previous commit date
+#+begin_src sh
+GIT_COMMITTER_DATE="Wed Sept 14 15:23:33 CEST 2019" git commit  --amend --no-edit --date "Wed Sept 14 15:23:33 CEST 2019"
+#+end_src
