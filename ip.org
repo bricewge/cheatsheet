@@ -1,0 +1,10 @@
+#+TITLE: ip
+
+* enable/disable a network interface
+:PROPERTIES:
+:source:   https://linux.goffinet.org/11-04-gestion-du-reseau-linux-avec-la-librairie-iproute2/#4-activerdesactiver-une-interface
+:END:
+#+begin_src sh
+ip link set "$interface" up
+ip link set "$interface" down
+#+end_src
