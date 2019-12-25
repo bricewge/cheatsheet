@@ -1,0 +1,9 @@
+#+TITLE: recode
+
+* email attachment in quoted printable (QP)
+#+begin_src sh
+  recode utf8..l1 < "$attachment"
+#+end_src
+
+Example of missencoded attachment (have a look at the copyright lines):
+https://lists.gnu.org/archive/html/guix-devel/2019-08/txtxqhRM0fcaj.txt
