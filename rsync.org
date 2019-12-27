@@ -1,0 +1,10 @@
+#+TITLE: rsync
+
+* copy directory through ssh with a non default port
+:PROPERTIES:
+:source:   https://mike-hostetler.com/rsync-non-standard-ssh-port/
+:END:
+
+#+begin_src sh
+rsync -ah --progress -e 'ssh -p 8022' source user@host:~/path/
+#+end_src
