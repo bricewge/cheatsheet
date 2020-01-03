@@ -1,0 +1,6 @@
+#+TITLE: nmcli
+
+* scan wifi hotspots
+#+begin_src sh
+  nmcli -f in-use,ssid,bssid,freq,signal,bars,security  dev wifi
+#+end_src
