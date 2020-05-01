@@ -12,3 +12,13 @@ git checkout $(git rev-list -1 --before="1 week ago" master)
 #+begin_src sh
 GIT_COMMITTER_DATE="Wed Sept 14 15:23:33 CEST 2019" git commit  --amend --no-edit --date "Wed Sept 14 15:23:33 CEST 2019"
 #+end_src
+
+* rebasing without signing commits
+:PROPERTIES:
+:source:   https://stackoverflow.com/a/43890599/12862625
+:END:
+When ~gpgSin = true~ you can still rebase (or pull) without having to
+resign any commit:
+#+begin_src sh
+git -c commit.gpgsign=false rebase
+#+end_src
