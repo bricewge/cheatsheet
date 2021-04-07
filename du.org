@@ -4,3 +4,12 @@
 #+begin_src sh
   du -had1 | sort -h
 #+end_src
+
+* find where most of the files are
+:PROPERTIES:
+:source:   https://unix.stackexchange.com/a/326568
+:END:
+Usefull when a disk is running out of inodes.
+#+begin_src sh
+du --inodes / | sort -n
+#+end_src
