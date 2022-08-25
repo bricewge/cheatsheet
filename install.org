@@ -1,0 +1,7 @@
+#+TITLE: install
+
+* create a directory with owner and mode
+
+#+begin_src sh
+install -d --owner alice --mode 750 /home/alice/foo
+#+end_src
