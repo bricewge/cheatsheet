@@ -1,0 +1,20 @@
+#+title: mogrify
+
+=mogirfy= modify an image in place, to write the modified image in a new
+file use =convert= with the same options appended with the name of the new
+file.
+
+* resize an image
+#+begin_src sh
+mogrify -resize 50% foo.jpg
+#+end_src
+
+* rotate an image
+#+begin_src sh
+mogrify -rotate 180 foo.jpg
+#+end_src
+
+* compress ~jpeg~ contained in a ~pdf~ file
+#+begin_src sh
+mogrify -density 200x200 -quality 60 -compress jpeg foo.pdf
+#+end_src
