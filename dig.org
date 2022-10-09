@@ -1,0 +1,12 @@
+#+TITLE:  dig
+
+* get public IP
+:PROPERTIES:
+:source:   https://developer.akamai.com/blog/2018/05/10/introducing-new-whoami-tool-dns-resolver-information
+:END:
+#+begin_src sh
+dig +short TXT whoami.ipv4.akahelp.net
+# IPv6 or dual stack
+dig + short TXT whoami.ipv6.akahelp.net
+dig + short TXT whoami.ds.akahelp.net
+#+end_src
