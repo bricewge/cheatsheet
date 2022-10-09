@@ -1,0 +1,18 @@
+#+title: nft
+
+* rules
+
+** list
+#+begin_src sh
+nft list ruleset
+#+end_src
+
+** purge
+#+begin_src sh
+nft flush ruleset
+#+end_src
+
+** load
+#+begin_src sh
+nft -f "$file"
+#+end_src
