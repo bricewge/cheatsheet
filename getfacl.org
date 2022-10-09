@@ -1,0 +1,19 @@
+#+TITLE: getfacl/setfacl
+
+* backup and restore file permissions
+:PROPERTIES:
+:source:   https://unix.stackexchange.com/a/189158
+:END:
+
+To back up permissions in the current directory and its subdirectories
+recursively:
+#+begin_src shell
+getfacl --recursive --numeric . >permissions.facl
+#+end_src
+=--numeric= is used to avoid error when restoring a group or owner not
+present on the system at the moment.
+
+To restore permissions:
+#+begin_src shell
+setfacl --restore=permissions.facl
+#+end_src
