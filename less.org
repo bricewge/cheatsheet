@@ -1,0 +1,12 @@
+#+TITLE: less
+
+* start at the end of file
+#+begin_src sh
+less +G "$file"
+#+end_src
+
+* follow a file
+Like ~tail -F~.
+#+begin_src sh
+less +F "$file"
+#+end_src
